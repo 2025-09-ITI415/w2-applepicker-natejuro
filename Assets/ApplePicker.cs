@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -17,7 +16,7 @@ public class ApplePicker : MonoBehaviour {
         {
             GameObject tBasketGO = Instantiate<GameObject>(basketPrefab);
             Vector3 pos = Vector3.zero;
-            pos.Yield = basketBottomy + (basketSpacingY * i);
+            pos.y = basketBottomy + (basketSpacingY * i);
             tBasketGO.transform.position = pos;
         }
     }

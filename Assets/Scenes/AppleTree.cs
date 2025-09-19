@@ -53,9 +53,9 @@ public class AppleTree : MonoBehaviour
 
     void FixedUpdate() {
         //Changing direction randomly is now time based
-    //if (Random.value < chanceToChangeDirections)
+        if (UnityEngine.Random.value < chanceToChangeDirections)
         {
-            speed *= -1; //change direction
+         speed *= -1; //change direction
         }
         }
     }
